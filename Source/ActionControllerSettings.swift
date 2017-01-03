@@ -29,15 +29,15 @@ public struct ActionControllerSettings {
     /** Struct that contains properties to configure the actions controller's behavior  */
     public struct Behavior {
         /**
-         * A Boolean value that determines whether the action controller must be dismissed when the user taps the 
+         * A Boolean value that determines whether the action controller must be dismissed when the user taps the
          * background view. Its default value is `true`.
          */
         public var hideOnTap = true
         /**
-         * A Boolean value that determines whether the action controller must be dismissed when the user scroll down 
+         * A Boolean value that determines whether the action controller must be dismissed when the user scroll down
          * the collection view. Its default value is `true`.
          *
-         * @discussion If `scrollEnabled` value is `false`, this property is discarded and the action controller won't 
+         * @discussion If `scrollEnabled` value is `false`, this property is discarded and the action controller won't
          * be dismissed if the user scrolls down the collection view.
          */
         public var hideOnScrollDown = true
@@ -46,12 +46,12 @@ public struct ActionControllerSettings {
          */
         public var scrollEnabled = false
         /**
-         * A Boolean value that controls whether the collection view scroll bounces past the edge of content and back 
+         * A Boolean value that controls whether the collection view scroll bounces past the edge of content and back
          * again. Its default value is `false`
          */
         public var bounces = false
         /**
-         * A Boolean value that determines whether if the collection view layout will use UIDynamics to animate its 
+         * A Boolean value that determines whether if the collection view layout will use UIDynamics to animate its
          * items. Its default value is `false`
          */
         public var useDynamics = false
@@ -76,52 +76,47 @@ public struct ActionControllerSettings {
          * The cancel view's background color. Its default value is `UIColor.blackColor().colorWithAlphaComponent(0.8)`.
          */
         public var backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        /**
-          * A Boolean value that determines whether the collection view can be partially covered by the 
-          * cancel view when it is pulled down. Its default value is `true`
-          */
-        public var hideCollectionViewBehindCancelView = true
     }
-
+    
     /** Struct that contains properties to configure the collection view's style */
     public struct CollectionViewStyle {
-        /** 
-          * A float that determines the margins between the collection view and the container view's margins.
-          * Its default value is `0`
-          */
+        /**
+         * A float that determines the margins between the collection view and the container view's margins.
+         * Its default value is `0`
+         */
         public var lateralMargin: CGFloat = 0
         /**
-          * A float that determines the cells' height when using UIDynamics to animate items. Its default value is `50`.
-          */
+         * A float that determines the cells' height when using UIDynamics to animate items. Its default value is `50`.
+         */
         public var cellHeightWhenDynamicsIsUsed: CGFloat = 50
     }
-  
+    
     /** Struct that contains properties to configure the animation when presenting the action controller */
     public struct PresentAnimationStyle {
-        /** 
-          * A float value that is used as damping for the animation block. Its default value is `1.0`.
-          * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-          */
+        /**
+         * A float value that is used as damping for the animation block. Its default value is `1.0`.
+         * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
+         */
         public var damping = CGFloat(1.0)
-        /** 
-          * A float value that is used as delay for the animation block. Its default value is `0.0`.
-          * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-          */
+        /**
+         * A float value that is used as delay for the animation block. Its default value is `0.0`.
+         * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
+         */
         public var delay = TimeInterval(0.0)
-        /** 
-          * A float value that determines the animation duration. Its default value is `0.7`.
-          * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-          */
+        /**
+         * A float value that determines the animation duration. Its default value is `0.7`.
+         * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
+         */
         public var duration = TimeInterval(0.7)
-        /** 
-          * A float value that is used as `springVelocity` for the animation block. Its default value is `0.0`.
-          * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-          */
+        /**
+         * A float value that is used as `springVelocity` for the animation block. Its default value is `0.0`.
+         * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
+         */
         public var springVelocity = CGFloat(0.0)
         /**
-          * A mask of options indicating how you want to perform the animations. Its default value is `UIViewAnimationOptions.CurveEaseOut`.
-          * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
-          */
+         * A mask of options indicating how you want to perform the animations. Its default value is `UIViewAnimationOptions.CurveEaseOut`.
+         * @see: animateWithDuration:delay:usingSpringWithDamping:initialSpringVelocity:options:animations:completion:
+         */
         public var options = UIViewAnimationOptions.curveEaseOut
     }
     
@@ -185,6 +180,10 @@ public struct ActionControllerSettings {
          */
         public var style = UIStatusBarStyle.lightContent
     }
+    public enum Location {
+        case top
+        case bottom
+    }
     
     /** Stores the behavior's properties values */
     public var behavior = Behavior()
@@ -196,6 +195,8 @@ public struct ActionControllerSettings {
     public var animation = AnimationStyle()
     /** Stores the status bar's properties values */
     public var statusBar = StatusBarStyle()
+    /** Stores the location of the controller */
+    public var location:Location = .top
     
     /**
      * Create the default settings

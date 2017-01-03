@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B0F466B377E7E15D01220C131F3139B0C99F6F61",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0BAD6EE702E43A29C476F6A1EA8E44BDD4CC5BFA" : 9223372036854775807,
+    "B0F466B377E7E15D01220C131F3139B0C99F6F61" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2BC7070E-F682-4B6C-A121-B1CE6DC58687",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0BAD6EE702E43A29C476F6A1EA8E44BDD4CC5BFA" : "XLActionController\/XLActionController\/",
+    "B0F466B377E7E15D01220C131F3139B0C99F6F61" : "XLActionController\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "XLActionController",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "XLActionController.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ilandbt\/XLActionController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BAD6EE702E43A29C476F6A1EA8E44BDD4CC5BFA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ilandbt\/XLActionController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0F466B377E7E15D01220C131F3139B0C99F6F61"
+    }
+  ]
+}
